@@ -8,6 +8,7 @@
     "setup:development": "cross-env BUILD_ENV=\"development\" cp dotenv.development .env.development",
     "dev": "next dev",
     "build": "next build",
+    "build:dev": "cross-env BUILD_ENV=\"development\" next build",
     "start": "next start",
     "test": "jest --watchAll",
     "lint": "eslint ./ --ext .js,jsx,.ts,.tsx",
