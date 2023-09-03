@@ -43,7 +43,6 @@
   ],
   "files": [
     "package.json",
-    "packages/api/package.json",
     "packages/next/package.json"
   ],
   "sortedSubItems": [
