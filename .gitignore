@@ -1,3 +1,6 @@
+# GOMI
+.DS_Store
+
 # Logs
 logs
 *.log
@@ -120,7 +123,7 @@ dist
 .tern-port
 
 # Stores VSCode versions used for testing VSCode extensions
-.vscode-test
+!.vscode
 
 # yarn v2
 .yarn/cache
@@ -128,3 +131,13 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+packages-cache
+
+# app
+!packages/api
+packages/api/node_modules
+!packages/next
+packages/next/node_modules
+
+# nodenv
+!.node-version

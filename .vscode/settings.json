@@ -1,0 +1,22 @@
+{
+  "files.exclude": {
+		"out": false
+	},
+	"files.trimTrailingWhitespace": true,
+	"editor.insertSpaces": false,
+	"editor.tabSize": 2,
+  "eslint.validate": ["javascript","typescript"],
+  "prettier.enable": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": false
+  },
+  "editor.formatOnSave": false,
+  "git.autofetch": true,
+  "cSpell.words": [],
+  "search.exclude": {
+    "packages/next/src/**/.yarn": true,
+    "packages/next/src/**/.pnp.*": true,
+    "out": true,
+		"server": true
+  }
+}

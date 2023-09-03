@@ -1,0 +1,79 @@
+{
+  "name": "@sujii/rsc-with-go-graphql",
+  "version": "0.0.1",
+  "description": "ReacrServerComponents-Next-next with Go-GraphQL-API-Server",
+  "license": "MIT",
+  "author": {
+    "name": "Susumu Fujii",
+    "email": "powermac.g7@gmail.com",
+    "twitter": "@sujii",
+    "github": "sujii",
+    "usuallyDistoribution": "Ubuntu@22.04"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sujii/rsc-with-go-graphql.git"
+  },
+  "scripts": {
+    "api": "yarn workspace @sujii/rsc-with-go-graphql-api",
+    "next": "yarn workspace @sujii/rsc-with-go-graphql-next",
+    "lint": "yarn lint:api && yarn lint:next",
+    "lint:api": "yarn workspace @sujii/rsc-with-go-graphql-api lint",
+    "lint:next": "yarn workspace @sujii/rsc-with-go-graphql-next lint",
+    "lintfix": "yarn lintfix:api && yarn lintfix:next",
+    "lintfix:api": "yarn workspace @sujii/rsc-with-go-graphql-api lint:fix",
+    "lintfix:next": "yarn workspace @sujii/rsc-with-go-graphql-next lint:fix",
+    "type-check": "yarn workspace @sujii/rsc-with-go-graphql-next type-check"
+  },
+  "dependencies": {
+    "@sujii/rsc-with-go-graphql-api": "*",
+    "@sujii/rsc-with-go-graphql-next": "*"
+  },
+  "devDependencies": {
+    "@changesets/cli": "2.26.2",
+    "@types/node": "^20.4.2",
+    "@types/vscode": "^1.78.0",
+    "cross-env": "^7.0.3",
+    "date-fns": "2.30.0",
+    "depcheck": "^1.4.3",
+    "eslint": "8.45.0",
+    "eslint-config-next": "13.4.10",
+    "fixpack": "^4.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "next": "13.4.10",
+    "nodenv": "^0.1.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "3.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "ts-node": "^10.9.1",
+    "tsc": "^2.0.4",
+    "typedoc": "0.24.8",
+    "typescript": "5.1.6",
+    "webpack": "^5.84.1"
+  },
+  "engines": {
+    "node": ">=18.16.0",
+    "yarn": ">=1.22.19"
+  },
+  "private": true,
+  "husky": {
+    "hooks": {
+      "preinstall": "npx -y only-allow yarn",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": [
+    "yarn exec lint-staged --concurrent false -c lint-staged.mjs",
+    "yarn fixpack"
+  ],
+  "simple-git-hooks": {
+    "pre-commit": "lint-staged"
+  },
+  "type": "module",
+  "workspaces": [
+    "./packages/api",
+    "./packages/next"
+  ]
+}
