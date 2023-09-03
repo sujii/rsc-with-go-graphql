@@ -1,3 +1,4 @@
 [submodule "packages/api"]
 	path = packages/api
 	url = https://github.com/sujii/go-graphql-jwt-api.git
+	branch = dev
