@@ -9,7 +9,10 @@ $ git submodule update --remote --merge
 
 ### 2. Start API
   - Set up the API package by reading the following configuration:
-    👉 [packages/api/README.md](https://github.com/sujii/go-graphql-jwt-api/blob/7c42b7ed33e740ac6c22b126a89ed1225d3ebb3e/README.md)
+
+```sh
+$ cat packages/api/README.md
+```
 
 ### 3. Install packages
 
