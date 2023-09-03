@@ -7,23 +7,23 @@ TESTING: ReactServerComponents sync with SpringBoot output GraphQL.
 $ git submodule update --remote --merge
 ```
 
-### Start API
+### 2. Start API
   - Read and pull settings below: [packages/api/README.md](packages/api/README.md)
 
-### Install packages
+### 3. Install packages
 
 ```sh
 $ make install
 ```
 
-### Build NextAPP
+### 4. Build NextAPP
 
 ```sh
 $ yarn next setup
 $ yarn next build:dev
 ```
 
-### Run NextAPP
+### 5. Run NextAPP
 
 ```sh
 $ yarn next start:dev
