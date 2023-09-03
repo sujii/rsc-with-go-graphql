@@ -8,7 +8,7 @@ $ git submodule update --remote --merge
 ```
 
 ### 2. Start API
-  - Read and pull settings below: [packages/api/README.md](packages/api/README.md)
+  - Set up the API package by reading the following configuration: [packages/api/README.md](packages/api/README.md)
 
 ### 3. Install packages
 
