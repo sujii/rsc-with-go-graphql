@@ -26,7 +26,7 @@
     "type-check": "yarn workspace @sujii/rsc-with-go-graphql-next type-check"
   },
   "dependencies": {
-    "@sujii/rsc-with-go-graphql-api": "*",
+    "@sujii/rsc-with-go-graphql-api": "1.0.3",
     "@sujii/rsc-with-go-graphql-next": "*"
   },
   "devDependencies": {

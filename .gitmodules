@@ -1,4 +1,4 @@
-[submodule "packages/api"]
+[submodule "@sujii/rsc-with-go-graphql-api"]
 	path = packages/api
-	url = https://github.com/sujii/go-graphql-jwt-api.git
+	url = https://github.com/sujii/rsc-with-go-graphql-api.git
 	branch = dev
